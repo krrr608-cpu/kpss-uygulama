@@ -20,12 +20,22 @@
       "sorular": [
         {
           "metin": "Tarih Soru 1: Osmanlı Devleti'nin kurucusu kimdir?",
-          "secenekler": ["Osman Bey", "Orhan Bey", "Fatih Sultan Mehmet", "Yavuz Sultan Selim"],
+          "secenekler": [
+            "Osman Bey",
+            "Orhan Bey",
+            "Fatih Sultan Mehmet",
+            "Yavuz Sultan Selim"
+          ],
           "cevap": "Osman Bey"
         },
         {
           "metin": "Tarih Soru 2: İstanbul kaç yılında fethedildi?",
-          "secenekler": ["1453", "1071", "1299", "1923"],
+          "secenekler": [
+            "1453",
+            "1071",
+            "1299",
+            "1923"
+          ],
           "cevap": "1453"
         }
       ]
@@ -37,12 +47,22 @@
       "sorular": [
         {
           "metin": "Coğrafya Soru 1: Türkiye'nin en yüksek dağı hangisidir?",
-          "secenekler": ["Ağrı Dağı", "Erciyes Dağı", "Uludağ", "Süphan Dağı"],
+          "secenekler": [
+            "Ağrı Dağı",
+            "Erciyes Dağı",
+            "Uludağ",
+            "Süphan Dağı"
+          ],
           "cevap": "Ağrı Dağı"
         },
         {
           "metin": "Coğrafya Soru 2: Hangi bölgemizde çay tarımı yapılır?",
-          "secenekler": ["Karadeniz", "Akdeniz", "Ege", "Marmara"],
+          "secenekler": [
+            "Karadeniz",
+            "Akdeniz",
+            "Ege",
+            "Marmara"
+          ],
           "cevap": "Karadeniz"
         }
       ]
@@ -53,9 +73,114 @@
       "renk": "blue",
       "sorular": [
         {
-          "metin": "Paragraf Soru 1: Bu parçada asıl anlatılmak istenen nedir?",
-          "secenekler": ["A Şıkkı", "B Şıkkı", "C Şıkkı", "D Şıkkı"],
-          "cevap": "A Şıkkı"
+          "metin": "Sanatçı, eserini oluştururken sadece kendi iç dünyasını yansıtmaz; aynı zamanda yaşadığı toplumun değerlerini, acılarını ve sevinçlerini de harmanlar. Bu yönüyle sanat, bireysel bir eylem olmaktan çıkıp toplumsal bir nitelik kazanır. Bir şairin dizesinde veya bir ressamın fırça darbesinde, o dönemin izlerini sürmek mümkündür.\n\nSoru: Bu parçada asıl anlatılmak istenen düşünce aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Sanatçının asıl amacı topluma yön vermektir.",
+            "Sanat eserleri, sanatçının hayal gücüyle sınırlıdır.",
+            "Sanat, bireysellikten öte toplumsal bir ayna görevi görür.",
+            "Toplumsal sorunları işlemeyen eserler kalıcı olamaz.",
+            "Sanatçı, eserlerinde sadece kendi duygularına yer vermelidir."
+          ],
+          "cevap": "Sanat, bireysellikten öte toplumsal bir ayna görevi görür."
+        },
+        {
+          "metin": "(I) Küresel ısınma, günümüz dünyasının en büyük tehditlerinden biridir. (II) Fosil yakıtların aşırı tüketimi, atmosferdeki sera gazı oranını artırmaktadır. (III) Bu durum, ortalama sıcaklıkların yükselmesine ve buzulların erimesine neden olmaktadır. (IV) Buzulların erimesi kutup ayılarının yaşam alanlarını daraltmaktadır. (V) Yenilenebilir enerji kaynaklarına yönelmek, bu sorunun çözümünde atılacak en önemli adımdır.\n\nSoru: Bu parçadaki numaralanmış cümlelerden hangisi düşüncenin akışını bozmaktadır?",
+          "secenekler": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V"
+          ],
+          "cevap": "IV"
+        },
+        {
+          "metin": "Kitap okumak, zihni besleyen en önemli aktivitelerden biridir. Düzenli okuyan bireylerin kelime dağarcığı gelişir, empati yetenekleri artar ve olaylara farklı pencerelerden bakabilirler. Ayrıca okuma alışkanlığı, stresi azaltarak zihinsel bir dinginlik sağlar. Ancak günümüzde dijital ekranlara olan bağımlılık, bu kıymetli alışkanlığın giderek zayıflamasına neden olmaktadır.\n\nSoru: Bu parçada kitap okumanın faydalarıyla ilgili aşağıdakilerden hangisine değinilmemiştir?",
+          "secenekler": [
+            "Empati kurma becerisini geliştirdiğine",
+            "Kelime hazinesini zenginleştirdiğine",
+            "Akademik başarıyı doğrudan artırdığına",
+            "Stresi azaltmaya yardımcı olduğuna",
+            "Bakış açısını genişlettiğine"
+          ],
+          "cevap": "Akademik başarıyı doğrudan artırdığına"
+        },
+        {
+          "metin": "Edebiyatımızda deneme türü, yazarın herhangi bir konuda kesin hükümlere varmadan, kendi kendisiyle konuşuyormuş gibi yazdığı yazılardır. Nurullah Ataç, bu türün en önemli temsilcilerindendir. Ataç, yazılarında samimi bir üslup kullanmış, okuyucuyu düşünmeye sevk etmiştir. Onun denemeleri, öğreticilikten ziyade düşündürücülüğü ile ön plana çıkar.\n\nSoru: Bu parçaya göre Nurullah Ataç'ın denemelerinin en belirgin özelliği nedir?",
+          "secenekler": [
+            "Okuyucuya kesin bilgiler vermesi",
+            "Samimi bir üslupla okuyucuyu düşündürmesi",
+            "Sadece toplumsal konuları ele alması",
+            "Dil kurallarına sıkı sıkıya bağlı kalması",
+            "Tarihi olayları anlatması"
+          ],
+          "cevap": "Samimi bir üslupla okuyucuyu düşündürmesi"
+        },
+        {
+          "metin": "Geleneksel Türk tiyatrosu, yazılı bir metne dayanmaz; doğaçlama olarak oynanır. Karagöz, Orta Oyunu ve Meddah gibi türler bu geleneğin en güzel örnekleridir. Bu oyunlarda güldürü unsuru ön plandadır ve genellikle yanlış anlaşılmalar üzerine kuruludur. Ayrıca bu oyunlar, dönemin sosyal yapısını eleştirel bir dille yansıtır.\n\nSoru: Bu parçadan Geleneksel Türk tiyatrosu ile ilgili hangisi çıkarılamaz?",
+          "secenekler": [
+            "Doğaçlama (tuluat) yöntemine dayandığı",
+            "Toplumsal eleştiriye yer verdiği",
+            "Güldürü unsurunun temel alındığı",
+            "Yazılı metinlere sıkı sıkıya bağlı kalındığı",
+            "Farklı türlerinin bulunduğu"
+          ],
+          "cevap": "Yazılı metinlere sıkı sıkıya bağlı kalındığı"
+        },
+        {
+          "metin": "Teknoloji, hayatımızı kolaylaştıran harika bir araçtır; ancak ...... . Eğer teknolojiyi bilinçsizce kullanırsak, sosyal ilişkilerimiz zayıflayabilir ve gerçek dünyadan kopabiliriz. Bu nedenle teknolojinin efendisi olmalı, kölesi değil.\n\nSoru: Bu parçada boş bırakılan yere düşüncenin akışına göre aşağıdakilerden hangisi getirilmelidir?",
+          "secenekler": [
+            "onu tamamen hayatımızdan çıkarmalıyız",
+            "doğru kullanılmadığında zararlı hale gelebilir",
+            "her zaman en yeni cihazları almalıyız",
+            "sadece iş hayatında kullanılması gerekir",
+            "eğitimde kullanımı yasaklanmalıdır"
+          ],
+          "cevap": "doğru kullanılmadığında zararlı hale gelebilir"
+        },
+        {
+          "metin": "Başarı, sadece varılan bir nokta değil, aynı zamanda yolculuğun kendisidir. Bir hedefe ulaşmak için harcanan çaba, dökülen ter ve edinilen tecrübeler, sonucun kendisinden daha değerlidir. Çünkü insanı olgunlaştıran ve geliştiren şey, kazandığı madalya değil, o madalyaya giden yolda aştığı engellerdir.\n\nSoru: Bu parçaya konulabilecek en uygun başlık aşağıdakilerden hangisidir?",
+          "secenekler": [
+            "Hedef Belirlemenin önemi",
+            "Başarının Tanımı ve Süreci",
+            "Engelleri Aşmak",
+            "Tecrübenin Gücü",
+            "Sonuç Odaklı Yaşam"
+          ],
+          "cevap": "Başarının Tanımı ve Süreci"
+        },
+        {
+          "metin": "Dil, bir milletin hafızasıdır. Geçmişten günümüze taşınan kültürel değerler, gelenekler ve inançlar dil aracılığıyla korunur. Bir toplumu yok etmek istiyorsanız, önce dilini bozmalısınız. Dili bozulan bir millet, tarihini unutur ve benliğini kaybeder. Bu yüzden Türkçemize sahip çıkmak, vatanımıza sahip çıkmakla eş değerdir.\n\nSoru: Yazarın bu parçada vurgulamak istediği temel düşünce nedir?",
+          "secenekler": [
+            "Yabancı dillerin öğrenilmesi gerektiği",
+            "Dilin milli kimliği korumadaki hayati önemi",
+            "Dil kurallarının zamanla değişebileceği",
+            "Tarih öğreniminin dilden daha önemli olduğu",
+            "Kültürel değerlerin yazılı eserlerle korunduğu"
+          ],
+          "cevap": "Dilin milli kimliği korumadaki hayati önemi"
+        },
+        {
+          "metin": "Stresle başa çıkmanın birçok yolu vardır. Kimi insan spor yaparak rahatlar, kimi müzik dinleyerek. Uzmanlar ise en etkili yöntemin 'doğru nefes almak' olduğunu belirtiyor. Doğru nefes, vücuda giren oksijen miktarını artırarak beynin daha sakin çalışmasını sağlar. Ayrıca düzenli uyku ve dengeli beslenme de stres yönetiminde kritik rol oynar.\n\nSoru: Bu parçaya göre aşağıdakilerden hangisi stresle başa çıkma yöntemlerinden biri olarak sayılmamıştır?",
+          "secenekler": [
+            "Spor yapmak",
+            "Müzik dinlemek",
+            "Doğru nefes almak",
+            "İlaç kullanmak",
+            "Düzenli uyumak"
+          ],
+          "cevap": "İlaç kullanmak"
+        },
+        {
+          "metin": "Çocuklara küçük yaşta sorumluluk bilinci kazandırılmalıdır. Kendi yatağını toplayan, oyuncaklarını düzenleyen bir çocuk, ileride iş hayatında da disiplinli olur. Ancak sorumluluk verirken çocuğun yaşına uygun görevler seçilmelidir. Aksi takdirde çocuk, başarısızlık hissine kapılarak öz güvenini kaybedebilir.\n\nSoru: Bu parçadan hareketle aşağıdakilerden hangisine ulaşılabilir?",
+          "secenekler": [
+            "Çocuklara her türlü ev işi yaptırılmalıdır.",
+            "Sorumluluk eğitimi okulda başlamalıdır.",
+            "Görevler çocuğun kapasitesine göre verilmelidir.",
+            "Disiplinli olmak için ceza yöntemi uygulanmalıdır.",
+            "Oyuncaklar ebeveynler tarafından toplanmalıdır."
+          ],
+          "cevap": "Görevler çocuğun kapasitesine göre verilmelidir."
         }
       ]
     }
