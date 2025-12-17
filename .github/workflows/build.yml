@@ -26,13 +26,15 @@ jobs:
 
       - name: Kutuphaneleri Yukle
         run: |
+          # Önce senin dosyanı yüklesin (eski sürüm gelse bile sorun değil)
           pip install -r requirements.txt
-          # 0.21.2 çok eski (isim değişmez), Son sürüm siyah ekran yapar.
-          # ÇÖZÜM: 0.24.1 (Hem isim değişir hem ekran açılır)
-          pip install flet==0.24.1
+          
+          # ŞİMDİ MÜDAHALE EDİYORUZ:
+          # Ne yüklü olursa olsun, her şeyi silip ZORLA 0.24.1 sürümünü kuruyoruz.
+          pip install --force-reinstall flet==0.24.1
 
       - name: APK Derle
-        # Artık 0.24.1 olduğu için bu komut sorunsuz çalışacak:
+        # Artık kesinlikle 0.24.1 olduğu için bu komut %100 çalışacak:
         run: flet build apk --product-name "Hilal_kpss" --icon icon.png --verbose
 
       - name: Dosyayi Yukle
