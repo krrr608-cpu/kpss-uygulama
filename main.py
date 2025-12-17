@@ -1,49 +1,69 @@
 import flet as ft
 import json
 import urllib.request
-import time
 import asyncio
 
 def main(page: ft.Page):
-    # --- BAŞLANGIÇ AYARLARI (İnternet yoksa bunlar geçerli) ---
-    DEFAULT_AYARLAR = {
-        "baslik": "Yükleniyor...",
-        "tema_rengi": "grey",
-        "arka_plan_rengi": "white",
-        "sure_var_mi": False,
-        "toplam_sure_dakika": 0,
-        "puan_dogru": 1,
-        "puan_yanlis": 0
+    # --- VARSAYILAN AYARLAR (İnternet ve kayıt yoksa) ---
+    DEFAULT_VERI = {
+        "ayarlar": {
+            "baslik": "KPSS (Varsayılan)",
+            "tema_rengi": "grey",
+            "arka_plan_rengi": "white",
+            "sure_var_mi": False
+        },
+        "sorular": [] 
     }
     
-    # Güvenli Mod Ayarları
+    # Güvenli Mod Ayarları (Siyah ekranı engeller)
     page.padding = 0
     page.spacing = 0
-    
-    # Ana Liste (Kaydırma sorunsuz olsun diye)
     ana_liste = ft.ListView(expand=True, spacing=0, padding=0)
     page.add(ana_liste)
 
-    # --- VERİ ÇEKME ---
-    # 👇 BURAYA KENDİ RAW LİNKİNİ YAPIŞTIR
+    # --- VERİ ÇEKME VE KAYDETME MERKEZİ ---
+    # Senin verdiğin özel link burada 👇
     URL = "https://raw.githubusercontent.com/krrr608-cpu/kpss-uygulama/refs/heads/main/sorular.json"
     
     veriler = {}
-    sorular = []
-    ayarlar = DEFAULT_AYARLAR
+    durum_mesaji = ""
     
     try:
-        response = urllib.request.urlopen(URL)
-        data = response.read().decode('utf-8')
-        veriler = json.loads(data)
+        # 1. Adım: İnternete Bağlanmayı Dene
+        # Timeout=3 sn yaptık ki uygulama açılışta çok beklemesin
+        response = urllib.request.urlopen(URL, timeout=3) 
+        data_str = response.read().decode('utf-8')
+        veriler = json.loads(data_str)
         
-        # Gelen veriyi parçala
-        sorular = veriler.get("sorular", [])
-        ayarlar = veriler.get("ayarlar", DEFAULT_AYARLAR)
-        durum_mesaji = "Güncel Ayarlar Yüklendi! ✅"
+        # 2. Adım: Başarılıysa veriyi telefona kaydet (Önbellekleme)
+        page.client_storage.set("kpss_son_veri", data_str)
+        durum_mesaji = "Veriler Güncel (İnternet) ✅"
+        print("İnternetten çekildi ve kaydedildi.")
+        
     except Exception as e:
-        durum_mesaji = "İnternet Yok, Standart Mod ❌"
-        print(e)
+        # 3. Adım: İnternet Yoksa, Hafızaya Bak
+        print(f"Hata oluştu: {e}")
+        durum_mesaji = "İnternet Yok - Kayıtlı Veri Açıldı 📂"
+        
+        if page.client_storage.contains_key("kpss_son_veri"):
+            kayitli_data = page.client_storage.get("kpss_son_veri")
+            try:
+                veriler = json.loads(kayitli_data)
+            except:
+                veriler = DEFAULT_VERI
+                durum_mesaji = "Kayıtlı veri bozuk! ❌"
+        else:
+            veriler = DEFAULT_VERI
+            durum_mesaji = "İnternet yok ve kayıt bulunamadı! ❌"
+
+    # Verileri Ayıkla
+    sorular = veriler.get("sorular", [])
+    # Ayarları alırken varsayılan değerleri koru
+    gelen_ayarlar = veriler.get("ayarlar", {})
+    varsayilan_ayarlar = DEFAULT_VERI["ayarlar"]
+    
+    # Gelen ayarlarla varsayılanları birleştir (Eksik ayar varsa hata vermesin)
+    ayarlar = {**varsayilan_ayarlar, **gelen_ayarlar}
 
     # --- AYARLARI UYGULA ---
     page.title = ayarlar.get("baslik")
@@ -56,20 +76,22 @@ def main(page: ft.Page):
     dogru_sayisi = 0
     yanlis_sayisi = 0
     
-    # Süre Hesabı
+    # Süre ve Puan Ayarları
     kalan_saniye = ayarlar.get("toplam_sure_dakika", 0) * 60
     sure_aktif = ayarlar.get("sure_var_mi", False)
+    puan_d = ayarlar.get("puan_dogru", 5)
+    puan_y = ayarlar.get("puan_yanlis", 0)
 
     # --- ARAYÜZ ELEMANLARI ---
-    
-    # Başlık ve Süre Göstergesi
     txt_baslik = ft.Text(ayarlar.get("baslik"), size=20, weight="bold", color="white")
-    txt_puan = ft.Text(f"Puan: {toplam_puan}", color="white")
+    txt_puan = ft.Text(f"Puan: 0", color="white")
     txt_sure = ft.Text("", color="white", weight="bold", size=16)
+    txt_durum = ft.Text(durum_mesaji, color="white70", size=12) 
     
     header = ft.Container(
         content=ft.Column([
             ft.Row([txt_baslik], alignment="center"),
+            ft.Row([txt_durum], alignment="center"),
             ft.Row([txt_sure, txt_puan], alignment="spaceBetween")
         ]),
         bgcolor=ANA_RENK,
@@ -77,7 +99,7 @@ def main(page: ft.Page):
         border_radius=ft.border_radius.only(bottom_left=15, bottom_right=15)
     )
 
-    # --- ZAMANLAYICI (Async Çalışır) ---
+    # --- ZAMANLAYICI ---
     async def sureyi_baslat():
         nonlocal kalan_saniye
         while kalan_saniye > 0 and sure_aktif:
@@ -91,7 +113,6 @@ def main(page: ft.Page):
         if sure_aktif and kalan_saniye <= 0:
             txt_sure.value = "SÜRE BİTTİ!"
             txt_sure.update()
-            # İstersen burada testi otomatik bitirebiliriz
 
     # --- EKRAN ÇİZİMİ ---
     def ekrani_ciz():
@@ -101,25 +122,20 @@ def main(page: ft.Page):
         ana_liste.controls.append(ft.Container(height=20))
 
         if not sorular:
-            ana_liste.controls.append(ft.Text("Soru yok veya internet hatası.", color="red", text_align="center"))
+            ana_liste.controls.append(ft.Text("Gösterilecek soru yok.\nLütfen internete bağlanıp uygulamayı yeniden açın.", color="red", text_align="center"))
             page.update()
             return
 
         if mevcut_index < len(sorular):
             soru = sorular[mevcut_index]
             
-            # Soru
             ana_liste.controls.append(
                 ft.Container(
                     content=ft.Text(soru["metin"], size=18, color="black"),
-                    bgcolor="white",
-                    padding=15,
-                    margin=10,
-                    border_radius=10
+                    bgcolor="white", padding=15, margin=10, border_radius=10
                 )
             )
 
-            # Şıklar
             for secenek in soru["secenekler"]:
                 btn = ft.Container(
                     content=ft.Text(secenek, size=16),
@@ -132,15 +148,17 @@ def main(page: ft.Page):
                     ink=True
                 )
                 ana_liste.controls.append(btn)
+            
+            ana_liste.controls.append(ft.Container(height=50)) # Alt boşluk
 
         else:
-            # Bitiş
+            # Bitiş Ekranı
             ana_liste.controls.append(
                 ft.Column([
                     ft.Text("TEST TAMAMLANDI", size=30, weight="bold", color=ANA_RENK),
                     ft.Text(f"Toplam Puan: {toplam_puan}", size=25, color="green"),
                     ft.Text(f"Doğru: {dogru_sayisi} | Yanlış: {yanlis_sayisi}", size=18),
-                    ft.ElevatedButton("Yenile", on_click=lambda _: page.window_reload(), bgcolor=ANA_RENK, color="white")
+                    ft.ElevatedButton("Yenile / Güncelle", on_click=lambda _: page.window_reload(), bgcolor=ANA_RENK, color="white")
                 ], horizontal_alignment="center", spacing=10)
             )
             
@@ -148,13 +166,13 @@ def main(page: ft.Page):
 
     def cevap_ver(e, secilen):
         nonlocal toplam_puan, dogru_sayisi, yanlis_sayisi
-        dogru_cvp = sorular[mevcut_index].get("cevap")
+        
+        # Cevap anahtarını bul (hem "cevap" hem "dogru_cevap" alanını kontrol et)
+        soru_data = sorular[mevcut_index]
+        dogru_cvp = soru_data.get("cevap") or soru_data.get("dogru_cevap")
         
         kutucuk = e.control
         
-        puan_d = ayarlar.get("puan_dogru", 5)
-        puan_y = ayarlar.get("puan_yanlis", 0)
-
         if secilen == dogru_cvp:
             dogru_sayisi += 1
             toplam_puan += puan_d
@@ -162,11 +180,10 @@ def main(page: ft.Page):
             kutucuk.border = ft.border.all(2, "green")
         else:
             yanlis_sayisi += 1
-            toplam_puan += puan_y # Eksi puan varsa düşer
+            toplam_puan += puan_y
             kutucuk.bgcolor = ft.colors.RED_100
             kutucuk.border = ft.border.all(2, "red")
 
-        # Puanı anlık güncelle
         txt_puan.value = f"Puan: {toplam_puan}"
         header.update()
         kutucuk.update()
@@ -185,9 +202,7 @@ def main(page: ft.Page):
         mevcut_index += 1
         ekrani_ciz()
 
-    # Başlat
     ekrani_ciz()
-    # Eğer süre aktifse sayacı başlat
     if sure_aktif:
         page.run_task(sureyi_baslat)
 
