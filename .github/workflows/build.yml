@@ -19,24 +19,23 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Flutter Kur (Eski Saglam Surum)
+      - name: Flutter Kur
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.19.6'
 
       - name: Kutuphaneleri Yukle
         run: |
+          # requirements.txt dosyasını az önce düzelttiğin için
+          # artık buradan doğru sürüm (0.23.2) yüklenecek.
           pip install -r requirements.txt
-          # Senin çalışan eski sürümüne geri dönüyoruz:
-          pip install flet==0.21.2
 
       - name: APK Derle
-        # Hata veren (--product-name) kısımlarını sildim.
-        # Artık hata vermeden eskisi gibi çalışacak.
-        run: flet build apk --verbose
+        # Artık flet sürümü 0.23.2 olduğu için bu komut kesin çalışacak:
+        run: flet build apk --product-name "Hilal_kpss" --icon icon.png --verbose
 
       - name: Dosyayi Yukle
         uses: actions/upload-artifact@v4
         with:
-          name: Hilal_kpss
+          name: Hilal_kpss_APK
           path: build/apk/app-release.apk
