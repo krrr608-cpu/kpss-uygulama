@@ -1,22 +1,31 @@
 {
   "ayarlar": {
-    "baslik": "KPSS Tarih Denemesi",
-    "tema_rengi": "blue",
-    "arka_plan_rengi": "#e3f2fd",
+    "apk_versiyonu": 1.1,
+    "apk_indirme_linki": "https://github.com/krrr608-cpu/kpss-uygulama/actions",
+    "baslik": "KPSS - Şekil Değiştiren",
+    "tema_rengi": "indigo",
+    "arka_plan_rengi": "#eeeeee",
     "sure_var_mi": true,
-    "toplam_sure_dakika": 15,
+    "toplam_sure_dakika": 20,
     "puan_dogru": 5,
-    "puan_yanlis": -2
+    "puan_yanlis": -1
+  },
+  "tasarim": {
+    "buton_yuvarlakligi": 20,
+    "soru_yazi_boyutu": 18,
+    "sik_yazi_boyutu": 16,
+    "baslik_ortala": true,
+    "golge_olsun_mu": true
   },
   "sorular": [
     {
-      "metin": "Soru 1: Aşağıdakilerden hangisi bir dildir?",
-      "secenekler": ["Python", "HTML", "CSS", "Excel", "Word"],
+      "metin": "Örnek Soru 1: Aşağıdakilerden hangisi bir programlama dilidir?",
+      "secenekler": ["HTML", "Python", "CSS", "TCP/IP"],
       "cevap": "Python"
     },
     {
-      "metin": "Soru 2: Türkiye'nin başkenti neresidir?",
-      "secenekler": ["İstanbul", "Ankara", "İzmir", "Bursa", "Adana"],
+      "metin": "Örnek Soru 2: Türkiye'nin başkenti neresidir?",
+      "secenekler": ["İstanbul", "Ankara", "İzmir", "Bursa"],
       "cevap": "Ankara"
     }
   ]
