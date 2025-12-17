@@ -27,9 +27,10 @@ jobs:
       - name: Kutuphaneleri Yukle
         run: |
           pip install -r requirements.txt
+          pip install --upgrade flet  # <--- BU SATIR FLET'İ GÜNCELLER VE HATAYI ÇÖZER
 
       - name: APK Derle
-        # HEM İSİM HEM DE İKON BURADA AYARLANIYOR:
+        # Artık Flet güncel olduğu için bu komut çalışacaktır:
         run: flet build apk --product-name "Hilal_kpss" --icon icon.png --verbose
 
       - name: Dosyayi Yukle
