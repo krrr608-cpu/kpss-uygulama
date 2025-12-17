@@ -3,17 +3,11 @@ import json
 import urllib.request
 import asyncio
 
-# --- VERSİYON KONTROLÜ İÇİN ---
-# Eğer ileride kodda büyük değişiklik yaparsan burayı 1.1, 1.2 diye artıracaksın.
-MEVCUT_VERSIYON = 1.0 
-
 def main(page: ft.Page):
     # --- VARSAYILAN AYARLAR (İnternet ve kayıt yoksa) ---
     DEFAULT_VERI = {
         "ayarlar": {
             "baslik": "KPSS", 
-            "apk_versiyonu": 1.0,
-            "apk_indirme_linki": "https://github.com/krrr608-cpu/kpss-uygulama",
             "tema_rengi": "blue", 
             "arka_plan_rengi": "white"
         },
@@ -46,14 +40,14 @@ def main(page: ft.Page):
         veriler = json.loads(data_str)
         
         # Başarılıysa hafızaya kaydet
-        page.client_storage.set("kpss_full_data_v1", data_str)
+        page.client_storage.set("kpss_final_data", data_str)
         durum_mesaji = "Güncel (Online) ✅"
     except:
         # 2. Adım: İnternet yoksa hafızaya bak
         durum_mesaji = "Offline Mod 📂"
-        if page.client_storage.contains_key("kpss_full_data_v1"):
+        if page.client_storage.contains_key("kpss_final_data"):
             try:
-                veriler = json.loads(page.client_storage.get("kpss_full_data_v1"))
+                veriler = json.loads(page.client_storage.get("kpss_final_data"))
             except:
                 veriler = DEFAULT_VERI
         else:
@@ -61,29 +55,8 @@ def main(page: ft.Page):
 
     # --- VERİLERİ AYIKLA ---
     sorular = veriler.get("sorular", [])
-    # Ayarları güvenli şekilde birleştir (Eksik varsa varsayılanı kullan)
     genel_ayar = {**DEFAULT_VERI["ayarlar"], **veriler.get("ayarlar", {})}
     tasarim = {**DEFAULT_VERI["tasarim"], **veriler.get("tasarim", {})}
-
-    # --- GÜNCELLEME KONTROL SİSTEMİ ---
-    net_versiyon = genel_ayar.get("apk_versiyonu", 1.0)
-    indirme_linki = genel_ayar.get("apk_indirme_linki", "https://github.com")
-
-    if net_versiyon > MEVCUT_VERSIYON:
-        def linke_git(e):
-            page.launch_url(indirme_linki)
-            
-        dlg = ft.AlertDialog(
-            title=ft.Text("YENİ GÜNCELLEME VAR! 🚀"),
-            content=ft.Text("Yeni özellikler eklendi. Lütfen son sürümü indirin."),
-            actions=[
-                ft.ElevatedButton("İndirmeye Git", on_click=linke_git, bgcolor="green", color="white"),
-            ],
-            modal=True,
-        )
-        page.dialog = dlg
-        dlg.open = True
-        page.update()
 
     # --- TASARIM DEĞİŞKENLERİ ---
     BASLIK = genel_ayar.get("baslik")
