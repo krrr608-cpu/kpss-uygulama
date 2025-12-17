@@ -1,12 +1,23 @@
-[
-  {
-    "metin": "İnternetten gelen soru 1: Paragrafın ana düşüncesi nedir?",
-    "secenekler": ["A Şıkkı", "B Şıkkı", "C Şıkkı", "D Şıkkı", "E Şıkkı"],
-    "cevap": "A Şıkkı"
+{
+  "ayarlar": {
+    "baslik": "KPSS Tarih Denemesi",
+    "tema_rengi": "blue",
+    "arka_plan_rengi": "#e3f2fd",
+    "sure_var_mi": true,
+    "toplam_sure_dakika": 15,
+    "puan_dogru": 5,
+    "puan_yanlis": -2
   },
-  {
-    "metin": "İnternetten gelen soru 2: Bu parçadan hangisi çıkarılamaz?",
-    "secenekler": ["X Şıkkı", "Y Şıkkı", "Z Şıkkı", "T Şıkkı", "K Şıkkı"],
-    "cevap": "Z Şıkkı"
-  }
-]
+  "sorular": [
+    {
+      "metin": "Soru 1: Aşağıdakilerden hangisi bir dildir?",
+      "secenekler": ["Python", "HTML", "CSS", "Excel", "Word"],
+      "cevap": "Python"
+    },
+    {
+      "metin": "Soru 2: Türkiye'nin başkenti neresidir?",
+      "secenekler": ["İstanbul", "Ankara", "İzmir", "Bursa", "Adana"],
+      "cevap": "Ankara"
+    }
+  ]
+}
