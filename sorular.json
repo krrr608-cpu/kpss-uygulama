@@ -28,6 +28,256 @@
           "secenekler": ["1453", "1071", "1299", "1923"],
           "cevap": "1453"
         }
+                {
+          "metin": "1. Tarihte bilinen ilk Türk devleti aşağıdakilerden hangisidir?",
+          "secenekler": ["Asya Hun Devleti", "Göktürkler", "Uygurlar", "Kutluk Devleti"],
+          "cevap": "Asya Hun Devleti"
+        },
+        {
+          "metin": "2. Türk adının geçtiği ilk yazılı metinler olan 'Orhun Abideleri' hangi devlete aittir?",
+          "secenekler": ["I. Göktürk", "II. Göktürk (Kutluk)", "Uygur", "Hun"],
+          "cevap": "II. Göktürk (Kutluk)"
+        },
+        {
+          "metin": "3. Yerleşik hayata geçen ilk Türk devleti hangisidir?",
+          "secenekler": ["Uygurlar", "Hunlar", "Göktürkler", "Avarlar"],
+          "cevap": "Uygurlar"
+        },
+        {
+          "metin": "4. Türk-İslam edebiyatının ilk eseri sayılan 'Kutadgu Bilig' kime aittir?",
+          "secenekler": ["Kaşgarlı Mahmut", "Yusuf Has Hacip", "Edip Ahmet Yükneki", "Ahmet Yesevi"],
+          "cevap": "Yusuf Has Hacip"
+        },
+        {
+          "metin": "5. Anadolu'nun kapılarının Türklere açıldığı savaş hangisidir?",
+          "secenekler": ["Pasinler", "Malazgirt", "Miryokefalon", "Dandanakan"],
+          "cevap": "Malazgirt"
+        },
+        {
+          "metin": "6. Osmanlı Devleti'nde ilk gümüş parayı bastıran padişah kimdir?",
+          "secenekler": ["Osman Bey", "Orhan Bey", "I. Murat", "Yıldırım Bayezid"],
+          "cevap": "Orhan Bey"
+        },
+        {
+          "metin": "7. Osmanlı Devleti'nde 'Fetret Devri'ne son vererek devletin ikinci kurucusu sayılan padişah kimdir?",
+          "secenekler": ["I. Mehmet (Çelebi)", "II. Murat", "Fatih Sultan Mehmet", "Yavuz Sultan Selim"],
+          "cevap": "I. Mehmet (Çelebi)"
+        },
+        {
+          "metin": "8. Fatih Sultan Mehmet, İstanbul'u fethederken Bizans'ın Haliç'e gerdiği zincirleri aşmak için gemileri nereden yürütmüştür?",
+          "secenekler": ["Galata", "Üsküdar", "Kasımpaşa-Dolmabahçe", "Beşiktaş"],
+          "cevap": "Galata"
+        },
+        {
+          "metin": "9. Yavuz Sultan Selim döneminde hangi savaş ile Halifelik Osmanlı'ya geçmiştir?",
+          "secenekler": ["Çaldıran", "Mercidabık", "Ridaniye", "Mohaç"],
+          "cevap": "Ridaniye"
+        },
+        {
+          "metin": "10. Osmanlı tarihinde en uzun süre tahtta kalan padişah kimdir?",
+          "secenekler": ["Fatih Sultan Mehmet", "Kanuni Sultan Süleyman", "IV. Murat", "II. Abdülhamit"],
+          "cevap": "Kanuni Sultan Süleyman"
+        },
+        {
+          "metin": "11. Mimar Sinan'ın 'Ustalık Eserim' dediği cami hangisidir?",
+          "secenekler": ["Şehzade Camii", "Süleymaniye Camii", "Selimiye Camii", "Sultanahmet Camii"],
+          "cevap": "Selimiye Camii"
+        },
+        {
+          "metin": "12. Osmanlı Devleti'nde Batı tarzı ilk ıslahatların yapıldığı dönem hangisidir?",
+          "secenekler": ["Lale Devri", "Tanzimat Dönemi", "Meşrutiyet Dönemi", "Gerileme Dönemi"],
+          "cevap": "Lale Devri"
+        },
+        {
+          "metin": "13. Osmanlı'da ilk kez çiçek aşısı hangi dönemde uygulanmıştır?",
+          "secenekler": ["Lale Devri", "Fatih Dönemi", "Kanuni Dönemi", "Tanzimat Dönemi"],
+          "cevap": "Lale Devri"
+        },
+        {
+          "metin": "14. Yeniçeri Ocağı'nı kaldırarak 'Vaka-i Hayriye' olayını gerçekleştiren padişah kimdir?",
+          "secenekler": ["III. Selim", "II. Mahmut", "Abdülmecit", "II. Abdülhamit"],
+          "cevap": "II. Mahmut"
+        },
+        {
+          "metin": "15. Osmanlı Devleti'nde halkın ilk kez yönetime katılması hangi olayla gerçekleşmiştir?",
+          "secenekler": ["Sened-i İttifak", "Tanzimat Fermanı", "Islahat Fermanı", "I. Meşrutiyet"],
+          "cevap": "I. Meşrutiyet"
+        },
+        {
+          "metin": "16. Mustafa Kemal Atatürk'ün Çanakkale Savaşı'nda 'Ben size taarruzu değil, ölmeyi emrediyorum' dediği yer neresidir?",
+          "secenekler": ["Conkbayırı", "Anafartalar", "Arıburnu", "Kireçtepe"],
+          "cevap": "Conkbayırı"
+        },
+        {
+          "metin": "17. I. Dünya Savaşı'nda Osmanlı Devleti'nin toprak kazandığı tek cephe hangisidir?",
+          "secenekler": ["Çanakkale", "Kafkas", "Suriye-Filistin", "Irak"],
+          "cevap": "Kafkas"
+        },
+        {
+          "metin": "18. Mondros Ateşkes Antlaşması'ndan sonra işgal edilen ilk Osmanlı toprağı neresidir?",
+          "secenekler": ["Musul", "İzmir", "İstanbul", "Antep"],
+          "cevap": "Musul"
+        },
+        {
+          "metin": "19. Milli Mücadele'nin gerekçesi, amacı ve yönteminin belirlendiği belge hangisidir?",
+          "secenekler": ["Havza Genelgesi", "Amasya Genelgesi", "Erzurum Kongresi", "Sivas Kongresi"],
+          "cevap": "Amasya Genelgesi"
+        },
+        {
+          "metin": "20. Temsil Heyeti'nin Ankara'ya gelmesinden sonra açılan kurum hangisidir?",
+          "secenekler": ["Türk Tarih Kurumu", "Anadolu Ajansı", "TBMM", "Halkevleri"],
+          "cevap": "TBMM"
+        },
+        {
+          "metin": "21. Düzenli ordunun Batı Cephesi'nde kazandığı ilk zafer hangisidir?",
+          "secenekler": ["I. İnönü", "II. İnönü", "Sakarya", "Büyük Taarruz"],
+          "cevap": "I. İnönü"
+        },
+        {
+          "metin": "22. Mustafa Kemal'e 'Gazilik' unvanı ve 'Mareşallik' rütbesi hangi savaştan sonra verilmiştir?",
+          "secenekler": ["I. İnönü", "II. İnönü", "Sakarya Meydan Muharebesi", "Büyük Taarruz"],
+          "cevap": "Sakarya Meydan Muharebesi"
+        },
+        {
+          "metin": "23. Milli Mücadele'yi sona erdiren ve Türkiye'nin tapusu sayılan antlaşma hangisidir?",
+          "secenekler": ["Sevr", "Gümrü", "Lozan", "Mondros"],
+          "cevap": "Lozan"
+        },
+        {
+          "metin": "24. Cumhuriyet hangi tarihte ilan edilmiştir?",
+          "secenekler": ["23 Nisan 1920", "29 Ekim 1923", "19 Mayıs 1919", "30 Ağustos 1922"],
+          "cevap": "29 Ekim 1923"
+        },
+        {
+          "metin": "25. Halifeliğin kaldırılması hangi tarihte gerçekleşmiştir?",
+          "secenekler": ["1922", "1923", "1924", "1925"],
+          "cevap": "1924"
+        },
+        {
+          "metin": "26. Türkiye Cumhuriyeti'nin ilk siyasi partisi hangisidir?",
+          "secenekler": ["Terakkiperver Cumhuriyet Fırkası", "Cumhuriyet Halk Fırkası", "Serbest Cumhuriyet Fırkası", "Demokrat Parti"],
+          "cevap": "Cumhuriyet Halk Fırkası"
+        },
+        {
+          "metin": "27. Kadınlara seçme ve seçilme hakkı tam olarak ne zaman verilmiştir?",
+          "secenekler": ["1930", "1933", "1934", "1935"],
+          "cevap": "1934"
+        },
+        {
+          "metin": "28. Yeni Türk harflerinin kabulü hangi yıl gerçekleşmiştir?",
+          "secenekler": ["1923", "1925", "1928", "1930"],
+          "cevap": "1928"
+        },
+        {
+          "metin": "29. Montrö Boğazlar Sözleşmesi ile Türkiye Boğazlar üzerinde tam hakimiyetini ne zaman sağlamıştır?",
+          "secenekler": ["1923", "1936", "1939", "1945"],
+          "cevap": "1936"
+        },
+        {
+          "metin": "30. Hatay, anavatana ne zaman katılmıştır?",
+          "secenekler": ["1936", "1938", "1939", "1940"],
+          "cevap": "1939"
+        },
+        {
+          "metin": "31. Türkiye NATO'ya hangi yıl üye olmuştur?",
+          "secenekler": ["1945", "1950", "1952", "1960"],
+          "cevap": "1952"
+        },
+        {
+          "metin": "32. Kıbrıs Barış Harekatı hangi yıl yapılmıştır?",
+          "secenekler": ["1960", "1974", "1980", "1983"],
+          "cevap": "1974"
+        },
+        {
+          "metin": "33. Osmanlı'da devlet memuru yetiştiren okul hangisidir?",
+          "secenekler": ["Medrese", "Enderun", "Rüştiye", "İdadi"],
+          "cevap": "Enderun"
+        },
+        {
+          "metin": "34. Mustafa Kemal Samsun'a çıktığında görevi neydi?",
+          "secenekler": ["9. Ordu Müfettişi", "Yıldırım Orduları Komutanı", "Hareket Ordusu Komutanı", "Sofya Ataşemiliteri"],
+          "cevap": "9. Ordu Müfettişi"
+        },
+        {
+          "metin": "35. 'Ordular! İlk hedefiniz Akdeniz'dir. İleri!' emri hangi savaşta verilmiştir?",
+          "secenekler": ["Sakarya", "I. İnönü", "Büyük Taarruz (Başkomutanlık)", "Kütahya-Eskişehir"],
+          "cevap": "Büyük Taarruz (Başkomutanlık)"
+        },
+        {
+          "metin": "36. Türk tarihinde ilk yazılı anayasa hangisidir?",
+          "secenekler": ["Kanun-i Esasi", "Teşkilat-ı Esasiye", "1924 Anayasası", "Sened-i İttifak"],
+          "cevap": "Kanun-i Esasi"
+        },
+        {
+          "metin": "37. Osmanlı Devleti'nin I. Dünya Savaşı'ndan çekildiği antlaşma hangisidir?",
+          "secenekler": ["Sevr", "Mondros", "Londra", "Bükreş"],
+          "cevap": "Mondros"
+        },
+        {
+          "metin": "38. Misak-ı Milli kararları nerede kabul edilmiştir?",
+          "secenekler": ["TBMM", "Son Osmanlı Mebusan Meclisi", "Sivas Kongresi", "Erzurum Kongresi"],
+          "cevap": "Son Osmanlı Mebusan Meclisi"
+        },
+        {
+          "metin": "39. İstiklal Marşı hangi savaşın sonucunda kabul edilmiştir?",
+          "secenekler": ["I. İnönü", "II. İnönü", "Sakarya", "Büyük Taarruz"],
+          "cevap": "I. İnönü"
+        },
+        {
+          "metin": "40. Mudanya Ateşkes Antlaşması ile savaş yapılmadan kurtarılan yerler neresidir?",
+          "secenekler": ["İzmir ve Aydın", "Doğu Trakya, İstanbul ve Boğazlar", "Antalya ve Muğla", "Antep ve Urfa"],
+          "cevap": "Doğu Trakya, İstanbul ve Boğazlar"
+        },
+        {
+          "metin": "41. Şeyh Sait İsyanı sonucunda kapatılan parti hangisidir?",
+          "secenekler": ["Cumhuriyet Halk Fırkası", "Terakkiperver Cumhuriyet Fırkası", "Serbest Cumhuriyet Fırkası", "Demokrat Parti"],
+          "cevap": "Terakkiperver Cumhuriyet Fırkası"
+        },
+        {
+          "metin": "42. Menemen Olayı'nda şehit edilen asteğmen kimdir?",
+          "secenekler": ["Mustafa Fehmi Kubilay", "Hasan Tahsin", "Şahin Bey", "Sütçü İmam"],
+          "cevap": "Mustafa Fehmi Kubilay"
+        },
+        {
+          "metin": "43. Türkiye'de ilk nüfus sayımı hangi yıl yapılmıştır?",
+          "secenekler": ["1923", "1927", "1930", "1935"],
+          "cevap": "1927"
+        },
+        {
+          "metin": "44. Atatürk'ün 'Benim şahsi meselem' dediği konu hangisidir?",
+          "secenekler": ["Musul Sorunu", "Boğazlar Sorunu", "Hatay Sorunu", "Nüfus Mübadelesi"],
+          "cevap": "Hatay Sorunu"
+        },
+        {
+          "metin": "45. Köy Enstitüleri hangi cumhurbaşkanı döneminde açılmıştır?",
+          "secenekler": ["Mustafa Kemal Atatürk", "İsmet İnönü", "Celal Bayar", "Cemal Gürsel"],
+          "cevap": "İsmet İnönü"
+        },
+        {
+          "metin": "46. II. Dünya Savaşı'na girmemesine rağmen Türkiye'nin savaşın etkilerini hissetmesi üzerine çıkarılan vergi kanunu hangisidir?",
+          "secenekler": ["Aşar Vergisi", "Varlık Vergisi", "Emlak Vergisi", "Gelir Vergisi"],
+          "cevap": "Varlık Vergisi"
+        },
+        {
+          "metin": "47. Demokrat Parti'nin iktidara gelmesiyle sona eren döneme ne ad verilir?",
+          "secenekler": ["Tek Parti Dönemi", "Meşrutiyet Dönemi", "Koalisyon Dönemi", "Lale Devri"],
+          "cevap": "Tek Parti Dönemi"
+        },
+        {
+          "metin": "48. Osmanlı'da esnaf teşkilatına ne ad verilir?",
+          "secenekler": ["Tımar", "Lonca", "Enderun", "Divan"],
+          "cevap": "Lonca"
+        },
+        {
+          "metin": "49. Padişahın yetkilerini ilk kez kısıtlayan belge hangisidir?",
+          "secenekler": ["Sened-i İttifak", "Tanzimat Fermanı", "Kanun-i Esasi", "Islahat Fermanı"],
+          "cevap": "Sened-i İttifak"
+        },
+        {
+          "metin": "50. Atatürk İlkelerinden hangisi din ve devlet işlerinin birbirinden ayrılmasını esas alır?",
+          "secenekler": ["Cumhuriyetçilik", "Milliyetçilik", "Laiklik", "Halkçılık"],
+          "cevap": "Laiklik"
+        }
       ]
     },
     {
