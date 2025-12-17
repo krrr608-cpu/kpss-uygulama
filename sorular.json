@@ -1,32 +1,63 @@
 {
   "ayarlar": {
-    "apk_versiyonu": 1.1,
-    "apk_indirme_linki": "https://github.com/krrr608-cpu/kpss-uygulama/actions",
-    "baslik": "KPSS - Şekil Değiştiren",
+    "baslik": "KPSS Cepte",
+    "apk_versiyonu": 1.0,
     "tema_rengi": "indigo",
-    "arka_plan_rengi": "#eeeeee",
-    "sure_var_mi": true,
-    "toplam_sure_dakika": 20,
-    "puan_dogru": 5,
-    "puan_yanlis": -1
+    "arka_plan_rengi": "#f3f4f6"
   },
   "tasarim": {
-    "buton_yuvarlakligi": 20,
+    "buton_yuvarlakligi": 15,
     "soru_yazi_boyutu": 18,
     "sik_yazi_boyutu": 16,
     "baslik_ortala": true,
     "golge_olsun_mu": true
   },
-  "sorular": [
+  "kategoriler": [
     {
-      "metin": "Örnek Soru 1: Aşağıdakilerden hangisi bir programlama dilidir?",
-      "secenekler": ["HTML", "Python", "CSS", "TCP/IP"],
-      "cevap": "Python"
+      "ad": "Tarih",
+      "ikon": "history_edu",
+      "renk": "orange",
+      "sorular": [
+        {
+          "metin": "Tarih Soru 1: Osmanlı Devleti'nin kurucusu kimdir?",
+          "secenekler": ["Osman Bey", "Orhan Bey", "Fatih Sultan Mehmet", "Yavuz Sultan Selim"],
+          "cevap": "Osman Bey"
+        },
+        {
+          "metin": "Tarih Soru 2: İstanbul kaç yılında fethedildi?",
+          "secenekler": ["1453", "1071", "1299", "1923"],
+          "cevap": "1453"
+        }
+      ]
     },
     {
-      "metin": "Örnek Soru 2: Türkiye'nin başkenti neresidir?",
-      "secenekler": ["İstanbul", "Ankara", "İzmir", "Bursa"],
-      "cevap": "Ankara"
+      "ad": "Coğrafya",
+      "ikon": "public",
+      "renk": "green",
+      "sorular": [
+        {
+          "metin": "Coğrafya Soru 1: Türkiye'nin en yüksek dağı hangisidir?",
+          "secenekler": ["Ağrı Dağı", "Erciyes Dağı", "Uludağ", "Süphan Dağı"],
+          "cevap": "Ağrı Dağı"
+        },
+        {
+          "metin": "Coğrafya Soru 2: Hangi bölgemizde çay tarımı yapılır?",
+          "secenekler": ["Karadeniz", "Akdeniz", "Ege", "Marmara"],
+          "cevap": "Karadeniz"
+        }
+      ]
+    },
+    {
+      "ad": "Paragraf",
+      "ikon": "menu_book",
+      "renk": "blue",
+      "sorular": [
+        {
+          "metin": "Paragraf Soru 1: Bu parçada asıl anlatılmak istenen nedir?",
+          "secenekler": ["A Şıkkı", "B Şıkkı", "C Şıkkı", "D Şıkkı"],
+          "cevap": "A Şıkkı"
+        }
+      ]
     }
   ]
 }
