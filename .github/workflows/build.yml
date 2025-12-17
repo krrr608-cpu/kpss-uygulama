@@ -29,7 +29,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: APK Derle
-        run: flet build apk --verbose
+        # DEĞİŞİKLİK BURADA YAPILDI:
+        run: flet build apk --product-name "Hilal_kpss" --verbose
 
       - name: Dosyayi Yukle
         uses: actions/upload-artifact@v4
