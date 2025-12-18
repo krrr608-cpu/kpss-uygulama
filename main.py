@@ -14,7 +14,7 @@ def main(page: ft.Page):
     page.add(ana_liste)
 
     # LİNKİN AYNI
-    URL = "https://raw.githubusercontent.com/krrr608-cpu/kpss-uygulama/refs/heads/main/sorular.json"
+    URL = "https://raw.githubusercontent.com/krrr608-cpu/Hilal_kpss/refs/heads/main/sorular.json"
 
     # Global Değişkenler
     veriler = {}
@@ -325,3 +325,4 @@ def main(page: ft.Page):
     ana_menuyu_ciz()
 
 ft.app(target=main)
+
