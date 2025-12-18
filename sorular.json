@@ -18,10 +18,6 @@
       "ikon": "history_edu",
       "renk": "orange",
       "sorular": [
-        {
-          "metin": "Tarih Soru 1: Osmanlı Devleti'nin kurucusu kimdir?",
-          "secenekler": ["Osman Bey", "Orhan Bey", "Fatih Sultan Mehmet", "Yavuz Sultan Selim"],
-          "cevap": "Osman Bey"
         },
         {
           "metin": "Tarih Soru 2: İstanbul kaç yılında fethedildi?",
