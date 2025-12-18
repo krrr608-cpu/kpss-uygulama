@@ -11,23 +11,29 @@
     "sik_yazi_boyutu": 16,
     "baslik_ortala": true,
     "golge_olsun_mu": true
-  },
+{
   "kategoriler": [
     {
-          {
       "ad": "Tarih",
       "ikon": "public",
       "renk": "green",
       "sorular": [
         {
+          "metin": "İstanbul kaç yılında fethedildi?",
+          "secenekler": ["1453", "1071", "1299", "1923"],
+          "cevap": "1453"
+        }
+      ]
+    },
+    {
       "ad": "Tarih 2",
       "ikon": "history_edu",
       "renk": "orange",
       "sorular": [
         {
-          "metin": "Tarih Soru 2: İstanbul kaç yılında fethedildi?",
-          "secenekler": ["1453", "1071", "1299", "1923"],
-          "cevap": "1453"
+          "metin": "Tarih Soru 2: Başka bir soru örneği?",
+          "secenekler": ["A", "B", "C", "D"],
+          "cevap": "A"
         },
         {
           "metin": "1. Milli Mücadele'nin 'amacı, gerekçesi ve yöntemi' ilk kez nerede belirtilmiştir?",
