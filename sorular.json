@@ -2,8 +2,8 @@
   "ayarlar": {
     "baslik": "Hilal",
     "apk_versiyonu": 1.0,
-    "tema_rengi": "indigo",
-    "arka_plan_rengi": "#fc05b6"
+    "tema_rengi": "pink",
+    "arka_plan_rengi": "#fcfcfc"
   },
   "tasarim": {
     "buton_yuvarlakligi": 15,
