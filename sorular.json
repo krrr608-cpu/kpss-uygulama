@@ -18,7 +18,6 @@
       "ikon": "history_edu",
       "renk": "orange",
       "sorular": [
-        },
         {
           "metin": "Tarih Soru 2: İstanbul kaç yılında fethedildi?",
           "secenekler": ["1453", "1071", "1299", "1923"],
