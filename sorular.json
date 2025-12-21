@@ -1190,6 +1190,98 @@
         "E) Bazı insanlar doğuştan şanslıdır."
       ],
       "cevap": "C) Başarıya giden yol, kararlılıkla ve başarısızlıklara rağmen devam etmekten geçer."
+    },
+    {
+      "metin": "(I) Kültür, bir milletin geçmişten günümüze taşıdığı maddi ve manevi değerlerin bütünüdür. (II) Dil, din, gelenek ve görenekler bu bütünün parçalarıdır. (III) Bir toplumu yok etmek isterseniz, işe kültüründen başlamanız gerekir. (IV) Ekonomik kalkınma, teknolojik yatırımlarla sağlanabilir. (V) Çünkü kültürü bozulan bir millet, benliğini kaybeder. Hangisi akışı bozmaktadır?",
+      "secenekler": ["A) I", "B) II", "C) III", "D) IV", "E) V"],
+      "cevap": "D) IV"
+    },
+    {
+      "metin": "Mükemmeliyetçilik, uzaktan bakıldığında bir erdem gibi görünür ancak yaklaştıkça ağır bir yük olduğu anlaşılır. Mükemmeliyetçi insan, hataya tahammül edemez; bu yüzden çoğu zaman başlamaktan korkar. Kişiyi eylemsizliğe iter. Bu parçada yazarın eleştirdiği tutum nedir?",
+      "secenekler": [
+        "A) İşlerin baştan savma yapılması.",
+        "B) Hedeflerin çok yüksek tutulması.",
+        "C) Hata yapma korkusuyla eyleme geçememek ve aşırı kusursuzluk arayışı.",
+        "D) İnsanların yeteneklerinin farkında olmaması.",
+        "E) Başkalarının hatalarını sürekli yüzüne vurmak."
+      ],
+      "cevap": "C) Hata yapma korkusuyla eyleme geçememek ve aşırı kusursuzluk arayışı."
+    },
+    {
+      "metin": "Sait Faik'in hikâyelerinde 'küçük insan'ın büyük dünyası vardır. O, bir balıkçının ağını tamir edişinde kocaman bir hayat felsefesi bulur. Kahramanları saraylarda değil, sokaklarda yaşayan sıradan insanlardır. Bu parçadan Sait Faik ile ilgili hangisine ulaşılabilir?",
+      "secenekler": [
+        "A) Eserlerinde tarihi olayları konu edindiğine.",
+        "B) Kahramanlarını genellikle seçkin zümreden seçtiğine.",
+        "C) Sıradan insanların yaşamındaki derinliği ve güzelliği anlattığına.",
+        "D) Hikâyelerinin olay örgüsünün çok karmaşık olduğuna.",
+        "E) Toplumsal sorunlara siyasi bir pencereden baktığına."
+      ],
+      "cevap": "C) Sıradan insanların yaşamındaki derinliği ve güzelliği anlattığına."
+    },
+    {
+      "metin": "----. Çünkü renklerin insan psikolojisi üzerinde yadsınamaz bir etkisi vardır. Fast-food restoranlarında neden her yerin kırmızı olduğunu düşündünüz mü? Bu renkler iştahı açar. Mavi ise güven verir; bu yüzden bankalar logolarında maviyi tercih eder. Parçanın başına hangisi getirilmelidir?",
+      "secenekler": [
+        "A) Dekorasyon yaparken moda olan renkleri seçmeliyiz",
+        "B) Pazarlama dünyasında hiçbir tercih tesadüf değildir",
+        "C) İnsanlar giydikleri kıyafetlere göre yargılanır",
+        "D) Resim sanatı, duyguların renklere dökülmüş halidir",
+        "E) Göz sağlığı için ışıklandırmaya dikkat edilmelidir"
+      ],
+      "cevap": "B) Pazarlama dünyasında hiçbir tercih tesadüf değildir"
+    },
+    {
+      "metin": "(I) Su, yaşamın kaynağıdır. (II) Uzmanlar günde en az 2 litre su tüketilmesini tavsiye ediyor. (III) Yeterli su içilmediğinde baş ağrısı ve yorgunluk ortaya çıkar. (IV) Kahve tüketimi ise son yıllarda gençler arasında artıyor. (V) Oysa suyun yerini hiçbir içecek tutamaz. Hangisi akışı bozmaktadır?",
+      "secenekler": ["A) I", "B) II", "C) III", "D) IV", "E) V"],
+      "cevap": "D) IV"
+    },
+    {
+      "metin": "Bir dildeki deyimler ve atasözleri, o toplumun hayata bakış açısını yansıtan aynalardır. Bu kalıplaşmış sözler, yüzyılların birikimini hap gibi sunar bize. Onları bilmek, o dili konuşan insanları anlamanın anahtarıdır. Bu parçada asıl anlatılmak istenen nedir?",
+      "secenekler": [
+        "A) Deyimler ve atasözleri ezberlenmesi zor kalıplardır.",
+        "B) Her dilde benzer anlamlara gelen atasözleri vardır.",
+        "C) Deyim ve atasözleri, ait oldukları toplumun zihniyetini yansıtır.",
+        "D) Ekonomik kalkınma için tasarruf yapmak şarttır.",
+        "E) Eski sözler günümüzde geçerliliğini yitirmiştir."
+      ],
+      "cevap": "C) Deyim ve atasözleri, ait oldukları toplumun zihniyetini yansıtır."
+    },
+    {
+      "metin": "Modern insan, sürekli 'mutlu olma' baskısı altında yaşıyor. Oysa hüzün de öfke de korku da en az mutluluk kadar insani ve gereklidir. Duyguları bastırmak değil, onları yaşamak ve anlamak insanı olgunlaştırır. Bu parçada karşı çıkılan düşünce nedir?",
+      "secenekler": [
+        "A) İnsanın duygularını ifade etmesi gerektiği.",
+        "B) Hüznün insanı olgunlaştırdığı.",
+        "C) İnsanın her zaman mutlu olması gerektiği ve mutsuzluğun başarısızlık sayılması.",
+        "D) Sosyal medyanın iletişimdeki gücü.",
+        "E) Kişisel gelişim kitaplarının çok okunması."
+      ],
+      "cevap": "C) İnsanın her zaman mutlu olması gerektiği ve mutsuzluğun başarısızlık sayılması."
+    },
+    {
+      "metin": "Okumak, sadece gözlerin satırlar üzerinde gezinmesi değildir; yazarla sessiz bir sohbete girişmektir. İyi kitap, cevaplar verenden ziyade, doğru soruları sorduran kitaptır. Bu parçaya göre 'iyi kitap'ın temel özelliği nedir?",
+      "secenekler": [
+        "A) Okuyucuyu eğlendirmesi.",
+        "B) Okurun zihninde yeni sorular uyandırıp düşünmeye sevk etmesi.",
+        "C) Yazarın hayatını detaylıca anlatması.",
+        "D) Kalın ve kapsamlı olması.",
+        "E) Herkes tarafından kolayca anlaşılması."
+      ],
+      "cevap": "B) Okurun zihninde yeni sorular uyandırıp düşünmeye sevk etmesi."
+    },
+    {
+      "metin": "(I) Geri dönüşüm, doğal kaynakların korunması için hayati önem taşır. (II) Kullanılmış cam ve plastiğin işlenmesi enerji tasarrufu sağlar. (III) Doğaya bırakılan atıklar çevre kirliliğinin nedenidir. (IV) Cam, sonsuz kez geri dönüştürülebilen en sağlıklı malzemedir. (V) Yapısı bozulmadan tekrar kullanılabilmesi onu ayırır. İkinci paragraf hangi cümleyle başlar?",
+      "secenekler": ["A) II", "B) III", "C) IV", "D) V", "E) I"],
+      "cevap": "C) IV"
+    },
+    {
+      "metin": "Hayat, bir satranç oyununa benzer. Her hamlenin bir sonucu vardır ve geri almak mümkün değildir. Önemli olan, sadece önündeki hamleyi değil, üç hamle sonrasını da görebilmektir. Bu parçada 'satranç' benzetmesiyle anlatılmak istenen nedir?",
+      "secenekler": [
+        "A) Hayatın bir oyun olduğu ve ciddiye alınmaması gerektiği.",
+        "B) Yaşamda yapılan seçimlerin sonuçları olduğu ve ileri görüşlü davranmak gerektiği.",
+        "C) Başarılı olmak için başkalarını feda etmek gerektiği.",
+        "D) Hayatın her zaman kazananı ve kaybedeni olduğu.",
+        "E) Risk almadan başarının gelmeyeceği."
+      ],
+      "cevap": "B) Yaşamda yapılan seçimlerin sonuçları olduğu ve ileri görüşlü davranmak gerektiği."
     }
   ]
 }
